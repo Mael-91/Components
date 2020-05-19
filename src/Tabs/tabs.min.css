@@ -1,0 +1,1 @@
+.nav-pills svg{display:inline-block}.tabs-content{position:relative;display:flex;justify-content:center}[role="tabpanel"]{overflow:hidden;transition:.3s}[role="tabpanel"][hidden="hidden"]{position:absolute;display:flex;top:0;left:0;right:0;justify-content:center;pointer-events:none;transform:translateY(10px);opacity:0}

@@ -1,0 +1,47 @@
+{
+  "name": "@mael/js-components",
+  "version": "0.1.0",
+  "description": "Reusable JavaScript Components",
+  "main": "src/index.js",
+  "private": false,
+  "scripts": {
+    "server": "browser-sync start --server --files=\"src/**/*.css, src/**/*.html, src/**/*.js\"",
+    "standard": "standard --fix",
+    "build:prefix-css": "postcss src/**/*.css --use autoprefixer -d src/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mael-91/Components.git"
+  },
+  "keywords": [
+    "reusable",
+    "components",
+    "javascript",
+    "custom",
+    "element"
+  ],
+  "author": "Mael",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mael-91/Components/issues"
+  },
+  "homepage": "https://github.com/Mael-91/Components#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "autoprefixer": "^9.8.0",
+    "browser-sync": "^2.26.7",
+    "postcss-cli": "^7.1.1",
+    "standard": "^14.3.4",
+    "uglify-es": "^3.3.9",
+    "uglifycss": "0.0.29"
+  },
+  "browserslist": [
+    "> 5%",
+    "last 3 versions",
+    "not dead",
+    "not ie 6-11"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
