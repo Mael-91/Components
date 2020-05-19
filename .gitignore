@@ -16,12 +16,10 @@ build/Release
 node_modules/
 jspm_packages/
 
-.travis.yml
 /.idea/
 /.github/
 /node_modules/
 /src/dist/
-/src/index.html
 /src/style.dev.css
 /src/Loader/loader.css
 /src/Modal/modal.css

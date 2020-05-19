@@ -1,0 +1,9 @@
+deploy:
+  provider: npm
+  email: $NPM_EMAIL
+  api_key:
+    secure: KZr/RrEqenJfAC4VfiEntiaoxk0u0GC1GG+Nn3qMW7CVfsqhoo4RgJ/wHVQeoCaPLMMT76NBt4ozQVocoL5JReHW6UI1IBvKxsDy1mAHn+I6eL25GoH3U4Pd84cH+I1oFhz85/5AHN7lEuAyETb5vSrqy1yp+6E/rgPbbeP2FrOHtiUwC0QP5swcYjO/azFVH/A0dnOdyx48eDNWg3NWLNzUcCi+Da/gMX2jEajHRh7O49a7cZAl+2ymUyUvilUQysh3aWfrRFVy+YfQXeBgnTt/OKMn1ZtJk2K0UpMHzupOzmJC9VI735AZ3j5Be00zgppjcKaUZo4K7xxmUAWWjBbAenODwcWFm8Ai0g6jKPejft3hKOiG6+WVmhafBT4UAUxDpbYCnQIoFsS5c0kcsyZ3/XkUWbhFfoY2Z77OyGitslOMbSS+9xnhIB9LUor2xNbmoE5tirSxcwdk0s/HsW2SW9OojRmatcJJu0naszwoBbFUmYb6C9JRmtElErbrnrcVaG6eBGzk2B4WT3G9WBehptscgeaUllm+f8nVatJ/wp2FOKu/e2sdO83eL/6kP4/3PPK7I14Quo8J1IFexuEfOpXlIizQZZaJXB+9RQp7FOuGDZSr40XV+C597+cWuptJdEaumhrSlB8HW5tYS10qqCruzCIe++KxP8h1Jas=
+  on:
+    tags: true
+    repo: Mael-91/Components
+  skip_cleanup: 'true'
