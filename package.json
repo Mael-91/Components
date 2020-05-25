@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "private": false,
   "scripts": {
-    "server": "browser-sync start --server --files=\"src/**/*.css, src/**/*.html, src/**/*.js\"",
+    "server": "browser-sync start --server --files=\"src/**/*.css, demo/**/*/html, demo/assets/css/*.css, demo/assets/js/*.js, src/**/*.html, src/**/*.js\"",
     "standard": "standard --fix",
     "build:prefix-css": "postcss src/**/*.css --use autoprefixer -d src/dist"
   },
@@ -26,8 +26,7 @@
     "url": "https://github.com/Mael-91/Components/issues"
   },
   "homepage": "https://github.com/Mael-91/Components#readme",
-  "devDependencies": {},
-  "dependencies": {
+  "devDependencies": {
     "autoprefixer": "^9.8.0",
     "browser-sync": "^2.26.7",
     "postcss-cli": "^7.1.1",
@@ -35,6 +34,7 @@
     "uglify-es": "^3.3.9",
     "uglifycss": "0.0.29"
   },
+  "dependencies": {},
   "browserslist": [
     "> 5%",
     "last 3 versions",

@@ -24,6 +24,7 @@ jspm_packages/
 /src/Loader/loader.css
 /src/Modal/modal.css
 /src/Tabs/tabs.css
+/src/Animations/words_animation.css
 
 # Components in progress
 /src/CountDown/
