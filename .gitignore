@@ -20,12 +20,9 @@ jspm_packages/
 /.github/
 /node_modules/
 /src/dist/
-/src/style.dev.css
 /src/Loader/loader.css
 /src/Modal/modal.css
 /src/Tabs/tabs.css
 /src/Animations/words_animation.css
-
-# Components in progress
-/src/CountDown/
-/src/ScrollTop/
+/src/Animations/animations.css
+/demo/assets/js/app.js

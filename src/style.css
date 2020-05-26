@@ -3,3 +3,5 @@
 @import "Modal/modal.min.css";
 @import "Tabs/tabs.min.css";
 @import "Animations/words_animation.css";
+@import "Animations/animations.min.css";
+:root{--container-padding:20px;--bg:#fff;--border-dark:#C7CCD2;--space:8px;--text-light:#121C42;}

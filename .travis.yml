@@ -1,12 +1,17 @@
 language: node_js
+
 node_js:
-- '12.16'
+  - "12.16"
+
 deploy:
-  provider: npm
-  email: "$NPM_EMAIL"
-  api_key:
-    secure: ix8Pwze1mnKVv06SobF5xS6lnkU5voQbnHAYScZBnu2hgBcrPXXLDjJppPZUPBbd3QJR6E2iLxicKGzKLFrTMsOynfMrczQEEOL0k5UJEc/Z+9x7uzZwdpHoFICzVZ4nbc3EdFpBvZ7BIQ89TKXuFgrxgVbBTSALcxNze7euGPv+eyjaFZPM3kwkEURQw+/P3KDoNxYxcRZYSjvqwiQHyoUGcqzlE66kcaCRr8k+4HPeubP8Z+fJ7ieZuO8P3J1CMzoTkwounxcgdR6sqCTUqtLQxcgCySv7Am/AkPuLY5JkV0Al36cQtjsfkUTYY0N9dh02hRtURhAH8PkjQ2AxpiT8c7GB9YyIQJ+6PTRse4hwUZeOA5S8ifmI34K6pPqr6EQkcJll2Mt6JwGnCWlarJ45qr1EOCyUnYtkF6RIhgeR7rnIp/tabQm4D4dPJi+33g1iEvLzLdnEaXuVP/T5Wqb41mpxMJL+c9wNsuFMlZF7yurf/LIg4l4UwKmeX7E40r16kRg3K4p75hS3N0jXfUaOqx2qjg2QpWj43b3B+l2Qf7/96rUUUvfdgBRI7Y+ZOZSfcwPAblFGFKTD7rUpPQl8IwpNi6mTjQv7FBVvcS1nOQbDTSZGJnPEzEf2b8yEG08FYc4UF3KV/92XpJiSR3o13ticGOCCnAPdPmAxPLI=
-  on:
-    tags: true
-    repo: Mael-91/Components
-  skip_cleanup: 'true'
+  - provider: npm
+    email: $NPM_EMAIL
+    api_key: $NPM_KEY
+    on:
+      tags: true
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    local_dir: demo
+    on:
+      branch: master
