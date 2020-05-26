@@ -8,8 +8,6 @@ Library regrouping various reusable javascript components
 
 > Be careful, I start in JavaScript, everything is not perfect but as time goes by, there will be improvements in the code.
 
-# User
-
 **Table of contents**
 - [Animations](https://github.com/Mael-91/Components#animations)
     - [Flip](https://github.com/Mael-91/Components#flip)
