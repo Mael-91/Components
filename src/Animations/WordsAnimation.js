@@ -1,8 +1,9 @@
 /**
+ * Animates a text with a word by word appearance
  * Anime un texte avec une apparition mot par mot
  * @param {String} selector
  */
-function animateText (selector) {
+export function animateText (selector) {
   const text = document.querySelector(selector)
   if (text === null) {
     console.error('Impossible de trouver l\'élément ' + selector)
@@ -17,11 +18,13 @@ function animateText (selector) {
 }
 
 /**
+ * Surrounds each word with a span (recursively)
  * Entoure chaque mot d'une span (récursivement)
  * @param {Node} element
  * @return {HTMLSpanElement[]}
  */
 function spanify (element) {
+  // We build a table containing the new structure
   // On construit un tableau contenant la nouvelle structure
   const children = Array.from(element.childNodes)
   let spans = []
@@ -40,6 +43,7 @@ function spanify (element) {
     }
   })
 
+  // We use this table and inject the elements into the text
   // On utilise ce tableau et on injecte les éléments dans le texte
   element.innerHTML = ''
   elements.forEach(el => {
@@ -50,6 +54,7 @@ function spanify (element) {
 }
 
 /**
+ * Surround the word with two spans
  * Entoure le mot de deux span
  * @param {String} word
  */
@@ -63,7 +68,7 @@ function wrapWord(word) {
 
 /**
  * @param {Node[]} arr
- * @param {Node} element Element à injecter entre chaque element du tableau
+ * @param {Node} element Element à injecter entre chaque element du tableau - Element to be injected between each element of the board
  * @return {Node[]}
  */
 function injectElementBetweenItems(arr, element) {
@@ -77,5 +82,3 @@ function injectElementBetweenItems(arr, element) {
     return acc
   }, [])
 }
-
-animateText('.word_animation')
