@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>JS Components</title>
+    <meta name="twitter:description" content="Reusable JavaScript Components">
+    <meta property="og:image" content="assets/img/js_component_favicon_192.png">
+    <meta property="og:title" content="JavaScript Components by Mael-91.me">
+    <meta name="description" content="Reusable JavaScript Components">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="assets/img/js_component_favicon_192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/js_component_favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/js_component_favicon_32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/js_component_favicon_180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/js_component_favicon_192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/js_component_favicon_512.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/Mael-91/Components/master/src/Tabs/tabs.min.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/Mael-91/Components/master/src/Loader/loader.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+        <div class="container-fluid">
+            <button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">JS Components</a>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li role="presentation" class="nav-item"></li>
+                    <li class="nav-item dropdown show">
+                        <a data-toggle="dropdown" aria-expanded="true" class="dropdown-toggle nav-link" href="#">Animations</a>
+                        <div role="menu" class="dropdown-menu">
+                            <a role="presentation" class="dropdown-item" href="#slide">Slide</a>
+                            <a role="presentation" class="dropdown-item" href="#flip">Flip</a>
+                            <a role="presentation" class="dropdown-item" href="#wordsanimations">Words Animations</a>
+                        </div>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                        <a class="nav-link" href="#countdown">CountDown</a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                        <a class="nav-link" href="#loader">Loader</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="#modal">Modal</a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                        <a class="nav-link" href="#scrolltop">ScrollTop</a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                        <a class="nav-link" href="#tabs">Tabs</a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                        <a class="nav-link" href="#textareaautogrow">Textarea Auto Grow</a>
+                    </li>
+                    <li role="presentation" class="nav-item">
+                        <a class="nav-link" href="#timeAgo">Time ago</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-left">
+                <a href="https://github.com/Mael-91"><img src="assets/img/mark-github.svg" alt="Github Logo"/></a>
+            </div>
+        </div>
+    </nav>
+    <div class="container container-content">
+        <h1 class="text-uppercase text-center component-name" id="animations">Animations</h1>
+        <h2 class="text-center subcomponent-name" id="flip">Flip</h2>
+        <div class="row justify-content-center">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">My card</h4>
+                    <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    <a class="card-link" href="#">Link</a>
+                    <a class="card-link" href="#">Link</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">My card</h4>
+                    <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    <a class="card-link" href="#">Link</a>
+                    <a class="card-link" href="#">Link</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">My card</h4>
+                    <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    <a class="card-link" href="#">Link</a>
+                    <a class="card-link" href="#">Link</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">My card</h4>
+                    <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    <a class="card-link" href="#">Link</a>
+                    <a class="card-link" href="#">Link</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">My card</h4>
+                    <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    <a class="card-link" href="#">Link</a>
+                    <a class="card-link" href="#">Link</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">My card</h4>
+                    <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    <a class="card-link" href="#">Link</a>
+                    <a class="card-link" href="#">Link</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">My card</h4>
+                    <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    <a class="card-link" href="#">Link</a>
+                    <a class="card-link" href="#">Link</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">My card</h4>
+                    <h6 class="text-muted card-subtitle mb-2">Subtitle</h6>
+                    <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                    <a class="card-link" href="#">Link</a>
+                    <a class="card-link" href="#">Link</a>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center subcomponent-name" id="slide">Slide</h2>
+        <div class="row justify-content-center">
+            <button type="button" class="btn btn-primary" id="slideUpbtn">SlideUp</button>
+            <div style="margin-left:20px;border: 1px solid black; padding:8px 16px" id="slideUpBlock">
+                Click on the "SlideUp" button to see the animation
+            </div>
+        </div>
+        <div class="row justify-content-center" style="margin-top: 15px">
+            <button type="button" class="btn btn-primary" id="slideDownBtn">SlideDown</button>
+            <div style="display:none;margin-left:20px;border: 1px solid black" id="slideDownBlock">
+                Click on the "SlideDown" button to see the animation
+            </div>
+        </div>
+        <h2 class="text-center subcomponent-name" id="wordsanimations">Words Animations</h2>
+        <p class="text-center text-muted">Reload the page to see the animation</p>
+        <div class="row justify-content-center">
+            <h4 class="word_animation">Word animation</h4>
+        </div>
+        <h1 class="text-center component-name" id="countdown">CountDown</h1>
+        <div class="row justify-content-center"></div>
+        <div class="jumbotron">
+            <h1 class="display-4 text-center">Coming Soon</h1>
+            <p class="lead text-center">Come back in a few days, maybe this component will be available.</p>
+        </div>
+        <h1 class="text-center component-name" id="loader">Loader</h1>
+        <div class="row justify-content-center">
+            <div class="btn-group btn-group-sm loader-btn-group" role="group">
+                <button type="button" class="btn btn-primary"><loader-element>Loader default</loader-element></button>
+                <button type="button" class="btn btn-primary"><loader-element type="double">Loader double</loader-element></button>
+                <button type="button" class="btn btn-primary"><loader-element type="circles-double">Loader circles double</loader-element></button>
+                <button type="button" class="btn btn-primary"><loader-element type="bars">Loader bars</loader-element></button>
+            </div>
+        </div>
+        <h1 class="text-center component-name" id="modal">Modal</h1>
+        <div class="row justify-content-center">
+            <a class="btn btn-primary" id="modalBtn">Click me</a>
+            <modal-box height="250" id="modalDemo">
+                <div class="modal">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal box Compnent</h5>
+                        <button class="modal-close" id="btnClose">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="modal-text">My modal text</p>
+                    </div>
+                </div>
+            </modal-box>
+        </div>
+        <h1 class="text-center component-name" id="scrolltop">Scroll Top</h1>
+        <div class="row justify-content-center"></div>
+        <div class="jumbotron">
+            <h1 class="display-4 text-center">Coming Soon</h1>
+            <p class="lead text-center">Come back in a few days, maybe this component will be available.</p>
+        </div>
+        <h1 class="text-center component-name" id="tabs">Tabs</h1>
+        <div class="row justify-content-center">
+            <nav-tabs class="nav-pills">
+                <a href="#tab1" aria-selected="true">Tab 1</a>
+                <a href="#tab2">Tab 2</a>
+                <a href="#tab3">Tab 3</a>
+            </nav-tabs>
+            <div class="tabs-content">
+                <div id="tab1">
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                        sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                        dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                        incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+                        exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+                        vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
+                        qui dolorem eum fugiat quo voluptas nulla pariatur?
+                    </p>
+                </div>
+                <div id="tab2" hidden="hidden">
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+                        similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                        Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+                        eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
+                        assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum
+                        necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque
+                        earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur
+                        aut perferendis doloribus asperiores repellat.
+                    </p>
+                </div>
+                <div id="tab3" hidden="hidden">
+                    <p>
+                        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+                        demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
+                        the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty
+                        through weakness of will, which is the same as saying through shrinking from toil and pain.
+                        These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice
+                        is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is
+                        to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty
+                        or the obligations of business it will frequently occur that pleasures have to be repudiated and
+                        annoyances accepted. The wise man therefore always holds in these matters to this principle of selection:
+                        he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h1 class="text-center component-name" id="textareaautogrow">Textarea Auto Grow</h1>
+        <p class="text-center">Enter a long text</p>
+        <div class="row justify-content-center">
+            <form>
+                <div class="form-group">
+                    <textarea class="form-control textarea-autogrow" is="textarea-autogrow"></textarea>
+                </div>
+            </form>
+        </div>
+        <h1 class="text-center component-name" id="timeAgo">Time Ago</h1>
+        <div class="rom justify-content-center">
+            <div class="row justify-content-center">
+                <time-ago data-ago="1590487761"></time-ago>
+                <time-ago data-ago="1014718161"></time-ago>
+                <time-ago data-ago="1672513761"></time-ago>
+            </div>
+        </div>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="mael-91.me">Mael-91's Portfolio</a></li>
+                <li class="list-inline-item"><a href="https://github.com/Mael-91">Github</a></li>
+                <li class="list-inline-item"><a href="#">Available on NPM</a></li>
+                <li class="list-inline-item"></li>
+            </ul>
+            <p class="copyright">© Copyright 2020, Mael-91.me. All Right Reserved<br></p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="assets/js/app.min.js"></script>
+</body>
+
+</html>
